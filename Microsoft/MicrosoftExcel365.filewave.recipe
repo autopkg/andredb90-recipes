@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Microsoft Excel</string>
         <key>fw_app_bundle_id</key>
-		    <string>com.github.andredb90.filewave.microsoftexcel365</string>
+	<string>com.github.andredb90.filewave.microsoftexcel365</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
@@ -22,8 +22,8 @@
   		<dict>
   			<key>Arguments</key>
   			<dict>
-          <key>fw_app_bundle_id</key>
-				  <string>%fw_app_bundle_id%</string>
+          			<key>fw_app_bundle_id</key>
+				<string>%fw_app_bundle_id%</string>
   				<key>fw_app_version</key>
   				<string>%version%</string>
   				<key>fw_fileset_name</key>
@@ -34,6 +34,6 @@
   			<key>Processor</key>
   			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
   		</dict>
-  	</array>
+	</array>
 </dict>
 </plist>
