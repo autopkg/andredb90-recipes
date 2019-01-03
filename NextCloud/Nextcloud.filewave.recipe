@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.andredb90.pkg.Nextcloud</string>
+    <string>com.github.andredb90.download.Nextcloud</string>
     <key>Process</key>
     <array>
   		<dict>
