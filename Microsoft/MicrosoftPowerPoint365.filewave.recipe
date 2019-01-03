@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Microsoft PowerPoint</string>
         <key>fw_app_bundle_id</key>
-	<string>com.github.andredb90.filewave.microsoftpowerpoint365</string>
+	<string>com.microsoft.Powerpoint</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.6.1</string>
