@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Microsoft Excel</string>
+        <string>Microsoft PowerPoint</string>
         <key>fw_app_bundle_id</key>
 	<string>com.github.andredb90.filewave.microsoftpowerpoint365</string>
     </dict>
