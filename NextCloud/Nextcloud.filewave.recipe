@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>0.6.1</string>
     <key>ParentRecipe</key>
-    <string>com.github.andredb90.download.Nextcloud</string>
+    <string>com.github.andredb90.pkg.nextcloud</string>
     <key>Process</key>
     <array>
   		<dict>
@@ -27,9 +27,9 @@
   				<key>fw_app_version</key>
   				<string>%version%</string>
   				<key>fw_fileset_name</key>
-  				<string>%NAME%</string>
+  				<string>%NAME% - %version%</string>
   				<key>fw_import_source</key>
-  				<string>%pathname%</string>
+  				<string>%pkg_path%</string>
   			</dict>
   			<key>Processor</key>
   			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
