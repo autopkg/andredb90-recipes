@@ -14,7 +14,7 @@
 	<string>com.microsoft.Outlook</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.6.1</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.rtrouton.pkg.microsoftoutlook365</string>
     <key>Process</key>
