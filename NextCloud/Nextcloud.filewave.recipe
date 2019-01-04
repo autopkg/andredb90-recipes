@@ -14,7 +14,7 @@
 	<string>com.nextcloud.desktopclient</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.6.1</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.andredb90.pkg.nextcloud</string>
     <key>Process</key>
