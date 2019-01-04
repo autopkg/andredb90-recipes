@@ -14,7 +14,7 @@
 	<string>com.microsoft.Excel</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.6.1</string>
+    <string>1.0.0</string>
     <key>ParentRecipe</key>
     <string>com.github.rtrouton.pkg.microsoftexcel365</string>
     <key>Process</key>
