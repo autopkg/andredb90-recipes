@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads the latest version of SecureSafe.</string>
 	<key>Identifier</key>
-	<string>com.github.andredb90.download.SecureSafe</string>
+	<string>com.github.andredb90.download.securesafe</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
