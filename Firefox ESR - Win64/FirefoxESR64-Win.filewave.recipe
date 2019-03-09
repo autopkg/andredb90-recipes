@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of the Firefox ESR installer for Windows x64 and imports it into FileWave.</string>
+    <string>Downloads the current release version of the Firefox ESR installer for Windows x64 and imports it into FileWave. Change Requirement to Windows after import!!</string>
     <key>Identifier</key>
     <string>com.github.andredb90.filewave.FirefoxESR64-Win</string>
     <key>Input</key>
