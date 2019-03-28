@@ -10,27 +10,27 @@
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
 	<string>com.github.andrewvalentine.download.franz</string>
-    <key>Input</key>
-	<dict>
+   	<key>Input</key>
+		<dict>
 		<key>NAME</key>
 		<string>Franz</string>
-        <key>fw_app_bundle_id</key>
-        <string>com.meetfranz.franz</string>
-        <key>fw_destination_root</key>
-        <string>/Applications/%NAME%.app</string>
-	</dict>
+      		<key>fw_app_bundle_id</key>
+       		<string>com.meetfranz.franz</string>
+     		<key>fw_destination_root</key>
+    		<string>/Applications/%NAME%.app</string>
+		</dict>
 	<key>Process</key>
 		<array>
-		<dict>
-			<key>Arguments</key>
 			<dict>
-				<key>pkgdirs</key>
+				<key>Arguments</key>
 				<dict>
-					<key>Applications</key>
-					<string>0775</string>
-				</dict>
-				<key>pkgroot</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+					<key>pkgdirs</key>
+					<dict>
+						<key>Applications</key>
+						<string>0775</string>
+					</dict>
+					<key>pkgroot</key>
+					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
 			</dict>
 			<key>Processor</key>
 			<string>PkgRootCreator</string>
