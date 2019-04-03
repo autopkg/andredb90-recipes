@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the current release version of the Microsoft Excel installer package for Office 365 and installs it.</string>
+    <key>Identifier</key>
+    <string>com.github.andreDB90.filewave.microsoftonedrive</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Microsoft OneDrive</string>
+        <key>fw_app_bundle_id</key>
+		    <string>com.microsoft.OneDrive</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>0.6.1</string>
+    <key>ParentRecipe</key>
+    <string>com.github.rtrouton.pkg.microsoftonedrive</string>
+    <key>Process</key>
+    <array>
+  		<dict>
+  			<key>Arguments</key>
+  			<dict>
+          <key>fw_app_bundle_id</key>
+				  <string>%fw_app_bundle_id%</string>
+  				<key>fw_app_version</key>
+  				<string>%version%</string>
+  				<key>fw_fileset_name</key>
+  				<string>%NAME% - %version%</string>
+  				<key>fw_import_source</key>
+  				<string>%pkg_path%</string>
+  			</dict>
+  			<key>Processor</key>
+  			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
+  		</dict>
+  	</array>
+</dict>
+</plist>
