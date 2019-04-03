@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of the Microsoft Excel installer package for Office 365 and installs it.</string>
+    <string>Downloads the current release version of the Microsoft Excel installer package for Office 365 and imports it into FileWave.</string>
     <key>Identifier</key>
     <string>com.github.andreDB90.filewave.microsoftonedrive</string>
     <key>Input</key>
