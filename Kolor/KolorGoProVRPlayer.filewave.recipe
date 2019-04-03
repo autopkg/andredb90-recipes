@@ -39,7 +39,7 @@
 				<key>destination_path</key>
 				<string>%pkgroot%/Applications/%NAME%.pkg</string>
 				<key>source_path</key>
-				<string>%input_path%</string>
+				<string>%pathname%/*.pkg</string>
 			</dict>
 			<key>Processor</key>
 			<string>Copier</string>
