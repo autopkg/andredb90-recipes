@@ -9,7 +9,7 @@
 	<key>MinimumVersion</key>
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
-	<string>com.github.hansen-m.download.GoProVRPlayer</string>
+	<string>com.github.andredb90.pkg.GoProVRPlayer</string>
     <key>Input</key>
 	<dict>
 		<key>NAME</key>
