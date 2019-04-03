@@ -10,7 +10,7 @@
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
 	<string>com.github.hansen-m.download.GoProVRPlayer</string>
-    <key>Input</key>
+	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>GoPro VR Player</string>
