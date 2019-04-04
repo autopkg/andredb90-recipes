@@ -10,12 +10,12 @@
 	<string>0.6.1</string>
 	<key>ParentRecipe</key>
 	<string>com.github.foigus.download.Wrike</string>
-    <key>Input</key>
+ 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>Wrike</string>
-        <key>fw_app_bundle_id</key>
-        <string>com.wrike.name</string>
+       		<key>fw_app_bundle_id</key>
+    		<string>com.wrike.name</string>
      		<key>fw_destination_root</key>
     		<string>/Applications/%NAME%.app</string>
 		</dict>
