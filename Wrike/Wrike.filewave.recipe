@@ -15,37 +15,48 @@
 		<key>NAME</key>
 		<string>Wrike</string>
         <key>fw_app_bundle_id</key>
-        <string>com.wrike.name</string>
+        <string>com.wrike.nam</string>
      		<key>fw_destination_root</key>
     		<string>/Applications/%NAME%.app</string>
 		</dict>
  	<key>Process</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<dict>
-					<key>pkgdirs</key>
-					<dict>
-						<key>Applications</key>
-						<string>0775</string>
-					</dict>
-					<key>pkgroot</key>
-					<string>%RECIPE_CACHE_DIR%/%NAME%</string>
-			</dict>
-			<key>Processor</key>
-			<string>PkgRootCreator</string>
-		</dict>
+	<array>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>destination_path</key>
-				<string>%pkgroot%/Applications/%NAME%.app</string>
-				<key>source_path</key>
-				<string>%pathname%/*.app</string>
-			</dict>
-			<key>Processor</key>
-			<string>Copier</string>
-		</dict>
+                        <key>Arguments</key>
+                        <dict>
+                                <key>pkgdirs</key>
+                                <dict>
+                                        <key>Applications</key>
+                                        <string>0775</string>
+                                </dict>
+                                <key>pkgroot</key>
+                                <string>%RECIPE_CACHE_DIR%/Applications</string>
+                        </dict>
+                        <key>Processor</key>
+                        <string>PkgRootCreator</string>
+                </dict>
+                <dict>
+                        <key>Arguments</key>
+                        <dict>
+                                <key>destination_path</key>
+                                <string>%pkgroot%/%NAME%.app</string>
+                                <key>source_path</key>
+                                <string>%pathname%/*.app</string>
+                        </dict>
+                        <key>Processor</key>
+                        <string>Copier</string>
+                </dict>
+                <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%pkgroot%/%NAME%.app/Contents/Info.plist</string>
+                <key>plist_version_key</key>
+                <string>CFBundleShortVersionString</string>
+            </dict>
+        </dict>
 		<dict>
 			<key>Arguments</key>
 			<dict>
@@ -58,7 +69,7 @@
 				<key>fw_fileset_name</key>
 				<string>%NAME% - %version%</string>
 				<key>fw_import_source</key>
-				<string>%pkgroot%/Applications/%NAME%.app</string>
+				<string>%pkgroot%/%NAME%.app</string>
 			</dict>
 			<key>Processor</key>
 			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
