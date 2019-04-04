@@ -15,7 +15,7 @@
 		<key>NAME</key>
 		<string>Wrike</string>
         <key>fw_app_bundle_id</key>
-        <string>com.wrike.nam</string>
+        <string>com.wrike.name</string>
      		<key>fw_destination_root</key>
     		<string>/Applications/%NAME%.app</string>
 		</dict>
