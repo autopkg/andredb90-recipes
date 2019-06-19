@@ -25,7 +25,7 @@
   			<dict>
   				<key>pkgdirs</key>
   				<dict>
-  					<key>Applications</key>
+  					<key>Installer</key>
   					<string>0775</string>
   				</dict>
   				<key>pkgroot</key>
