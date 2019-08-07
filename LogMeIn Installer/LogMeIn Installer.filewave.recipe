@@ -9,9 +9,9 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Nextcloud</string>
+        <string>LogMeIn Installer</string>
         <key>fw_app_bundle_id</key>
-	<string>com.nextcloud.desktopclient</string>
+	<string>com.logmein.LogMeInInstaller</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
