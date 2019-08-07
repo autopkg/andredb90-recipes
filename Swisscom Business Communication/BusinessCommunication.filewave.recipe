@@ -15,36 +15,23 @@
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
 	<string>com.github.andredb90.download.BusinessCommunication</string>
-	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_plist_path</key>
-				<string>%pathname%/Business Communication.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-			<key>Processor</key>
-			<string>Versioner</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>fw_app_bundle_id</key>
-				<string>%fw_app_bundle_id%</string>
-				<key>fw_app_version</key>
-				<string>%version%</string>
-				<key>fw_destination_root</key>
-				<string>%fw_destination_root%</string>
-				<key>fw_fileset_name</key>
-				<string>%NAME% - %version%</string>
-				<key>fw_import_source</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/Business Communication.app</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
-		</dict>
+    <key>Process</key>
+    <array>
+  		<dict>
+  			<key>Arguments</key>
+  			<dict>
+        			<key>fw_app_bundle_id</key>
+			  	<string>%fw_app_bundle_id%</string>
+  				<key>fw_app_version</key>
+  				<string>%version%</string>
+  				<key>fw_fileset_name</key>
+  				<string>%NAME% - %version%</string>
+  				<key>fw_import_source</key>
+  				<string>%pkg_path%</string>
+  			</dict>
+  			<key>Processor</key>
+  			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
+  		</dict>
 	</array>
 </dict>
 </plist>
