@@ -14,7 +14,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.andredb90.download.BusinessCommunication</string>
+	<string>com.github.andredb90.pkg.BusinessCommunication</string>
     <key>Process</key>
     <array>
   		<dict>
