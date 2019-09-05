@@ -2,49 +2,38 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Description</key>
-	<string>Downloads the latest version of iTaskX 4 and uploads it into FileWave</string>
-	<key>Identifier</key>
-	<string>com.github.andredb90.filewave.iTaskX4</string>
-	<key>Input</key>
-	<dict>
-		<key>NAME</key>
-		<string>iTaskX 4</string>
-	</dict>
-	<key>MinimumVersion</key>
-	<string>1.0.0</string>
-	<key>ParentRecipe</key>
-	<string>com.github.andredb90.download.iTaskX4</string>
-	<key>Process</key>
-	<array>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>input_plist_path</key>
-				<string>%pathname%/iTaskX 4.app/Contents/Info.plist</string>
-				<key>plist_version_key</key>
-				<string>CFBundleShortVersionString</string>
-			</dict>
-			<key>Processor</key>
-			<string>Versioner</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>fw_app_bundle_id</key>
-				<string>at.techno-grafik.iTaskX4</string>
-				<key>fw_app_version</key>
-				<string>%version%</string>
-				<key>fw_destination_root</key>
-				<string>/Applications/iTaskX 4.app</string>
-				<key>fw_fileset_name</key>
-				<string>%NAME% - %version%</string>
-				<key>fw_import_source</key>
-				<string>%RECIPE_CACHE_DIR%/%NAME%/iTaskX 4.app</string>
-			</dict>
-			<key>Processor</key>
-			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
-		</dict>
+    <key>Description</key>
+    <string>Downloads the latest version of iTaskX 4 installer package and uploads it into FileWave.</string>
+    <key>Identifier</key>
+    <string>com.github.andredb90.filewave.iTaskX4</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>iTaskX 4</string>
+        <key>fw_app_bundle_id</key>
+	<string>at.techno-grafik.iTaskX4</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.0.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.andredb90.pkg.iTaskX4</string>
+    <key>Process</key>
+    <array>
+  		<dict>
+  			<key>Arguments</key>
+  			<dict>
+          			<key>fw_app_bundle_id</key>
+				<string>%fw_app_bundle_id%</string>
+  				<key>fw_app_version</key>
+  				<string>%version%</string>
+  				<key>fw_fileset_name</key>
+  				<string>%NAME% - %version%</string>
+  				<key>fw_import_source</key>
+  				<string>%pkg_path%</string>
+  			</dict>
+  			<key>Processor</key>
+  			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
+  		</dict>
 	</array>
 </dict>
 </plist>
