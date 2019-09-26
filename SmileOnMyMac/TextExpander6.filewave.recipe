@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>io.github.hjuutilainen.download.TextExpander6</string>
+    <string>io.github.hjuutilainen.pkg.TextExpander6</string>
     <key>Process</key>
     <array>
   		<dict>
