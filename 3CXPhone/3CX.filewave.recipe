@@ -18,8 +18,6 @@
      		<string>3cxphone14</string>
         	<key>fw_destination_root</key>
         	<string>/Applications/3CXPhone.app</string>
-		<key>fw_fileset_name</key>
-		<string>3CXPhone</string>
 	</dict>
 	<key>Process</key>
 	<array>
@@ -53,7 +51,7 @@
 				<key>fw_destination_root</key>
 				<string>%fw_destination_root%</string>
 				<key>fw_fileset_name</key>
-				<string>%fw_fileset_name% - %version%</string>
+				<string>%NAME% - %version%</string>
 				<key>fw_import_source</key>
 				<string>%RECIPE_CACHE_DIR%/3CXPhone.app</string>
 			</dict>
