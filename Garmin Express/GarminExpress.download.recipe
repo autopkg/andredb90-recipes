@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Downloads the latest version of Garmin Express.</string>
+	<key>Identifier</key>
+	<string>com.github.andredb90.download.GarminExpress</string>
+	<key>Input</key>
+	<dict>
+		<key>DOWNLOAD_URL</key>
+		<string>https://download.garmin.com/omt/express/GarminExpress.dmg</string>
+		<key>NAME</key>
+		<string>Garmin Express</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>filename</key>
+				<string>%NAME%.dmg</string>
+				<key>url</key>
+				<string>%DOWNLOAD_URL%</string>
+			</dict>
+			<key>Processor</key>
+			<string>URLDownloader</string>
+		</dict>
+		<dict>
+			<key>Processor</key>
+			<string>EndOfCheckPhase</string>
+		</dict>
+		<dict>
+					<key>Arguments</key>
+					<dict>
+						<key>expected_authority_names</key>
+						<array>
+							<string>Developer ID Installer: Garmin International (72ES32VZUA)</string>
+							<string>Developer ID Certification Authority</string>
+							<string>Apple Root CA</string>
+						</array>
+						<key>input_path</key>
+						<string>%pathname%/Install Garmin Express.pkg</string>
+					</dict>
+					<key>Processor</key>
+					<string>CodeSignatureVerifier</string>
+				</dict>
+	</array>
+</dict>
+</plist>
