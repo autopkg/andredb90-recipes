@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of the Wacom Tablet installer package and imports it into FileWave.</string>
+    <string>Downloads the current release version of the Wacom Tablet Installer Package and imports it into FileWave.</string>
     <key>Identifier</key>
     <string>com.github.andredb90.filewave.WacomTablet</string>
     <key>Input</key>
@@ -16,49 +16,24 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.rustymyers.download.WacomTablet</string>
+    <string>com.github.nstrauss.pkg.WacomTablet</string>
     <key>Process</key>
     <array>
   		<dict>
   			<key>Arguments</key>
   			<dict>
-  				<key>pkgdirs</key>
-  				<dict>
-  					<key>Installer</key>
-  					<string>0775</string>
-  				</dict>
-  				<key>pkgroot</key>
-  				<string>%RECIPE_CACHE_DIR%/WacomTablet</string>
-  			</dict>
-  			<key>Processor</key>
-  			<string>PkgRootCreator</string>
-  		</dict>
-  		<dict>
-  			<key>Arguments</key>
-  			<dict>
-  				<key>destination_path</key>
-  				<string>%pkgroot%/Installer/WacomTablet.pkg</string>
-  				<key>source_path</key>
-  				<string>%input_path%</string>
-  			</dict>
-  			<key>Processor</key>
-  			<string>Copier</string>
-  		</dict>
-  		<dict>
-  			<key>Arguments</key>
-  			<dict>
-  				<key>fw_app_bundle_id</key>
-  				<string>%fw_app_bundle_id%</string>
+       				<key>fw_app_bundle_id</key>
+				<string>%fw_app_bundle_id%</string>
   				<key>fw_app_version</key>
   				<string>%version%</string>
   				<key>fw_fileset_name</key>
   				<string>%NAME% - %version%</string>
   				<key>fw_import_source</key>
-  				<string>%pkgroot%/Installer/WacomTablet.pkg</string>
+  				<string>%pkg_path%</string>
   			</dict>
   			<key>Processor</key>
   			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
   		</dict>
-  	</array>
+	</array>
 </dict>
 </plist>
