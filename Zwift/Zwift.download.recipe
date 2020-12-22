@@ -37,7 +37,7 @@
 			<dict>
 				<key>expected_authority_names</key>
 				<array>
-					<string>Developer ID Installer: Zwift LLC (C2GM8Y9VFM)</string>
+					<string>Developer ID Installer: Zwift, Inc (C2GM8Y9VFM)</string>
 					<string>Developer ID Certification Authority</string>
 					<string>Apple Root CA</string>
 				</array>
