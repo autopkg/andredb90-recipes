@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Google Chrome</string>
+        <string>Nextcloud</string>
         <key>fw_app_bundle_id</key>
         <string>com.github.andredb90.filewave.nextcloud-Win64</string>
     </dict>
