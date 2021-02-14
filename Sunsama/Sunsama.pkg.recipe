@@ -8,8 +8,6 @@
 	<string>com.github.andredb90.pkg.Sunsama</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.sunsama.native-app</string>
 		<key>NAME</key>
 		<string>Sunsama</string>
 	</dict>
