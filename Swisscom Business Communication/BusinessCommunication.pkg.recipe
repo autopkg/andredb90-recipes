@@ -8,8 +8,6 @@
 	<string>com.github.andredb90.pkg.BusinessCommunication</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.broadsoft.communicator</string>
 		<key>NAME</key>
 		<string>Business Communication</string>
 	</dict>

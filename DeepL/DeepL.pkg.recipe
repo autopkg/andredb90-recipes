@@ -8,8 +8,6 @@
 	<string>com.github.andredb90.pkg.DeepL</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>com.linguee.DeepLCopyTranslator</string>
 		<key>NAME</key>
 		<string>DeepL</string>
 	</dict>

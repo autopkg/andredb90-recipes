@@ -8,8 +8,6 @@
 	<string>com.github.andredb90.pkg.iTaskX4</string>
 	<key>Input</key>
 	<dict>
-		<key>BUNDLE_ID</key>
-		<string>at.techno-grafik.iTaskX4</string>
 		<key>NAME</key>
 		<string>iTaskX 4</string>
 	</dict>
