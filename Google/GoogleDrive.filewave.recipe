@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of the Google Drive File Stream Installer Package and imports it into FileWave.</string>
+    <string>Downloads the current release version of the Google Drive Installer Package and imports it into FileWave.</string>
     <key>Identifier</key>
-    <string>com.github.andredb90.filewave.GoogleDriveFileStream</string>
+    <string>com.github.andredb90.filewave.GoogleDrive</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
-        <string>Google Drive File Stream</string>
+        <string>GoogleDrive</string>
         <key>fw_app_bundle_id</key>
 	<string>com.google.drivefs</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.mlbz521.pkg.GoogleDriveFileStream</string>
+    <string>com.github.nstrauss.pkg.GoogleDrive</string>
     <key>Process</key>
     <array>
   		<dict>
