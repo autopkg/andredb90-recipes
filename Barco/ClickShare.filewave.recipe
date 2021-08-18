@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>CraftManager.filewave.recipe</string>
+    <string>com.github.moofit-recipes.pkg.ClickShare</string>
     <key>Process</key>
     <array>
   		<dict>
