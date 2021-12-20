@@ -8,7 +8,7 @@
     <string>com.github.andredb90.filewave.Notion</string>
     <key>Input</key>
     <dict>
-		<key>NAME</key>
+	<key>NAME</key>
         <string>Notion</string>
         <key>fw_app_bundle_id</key>
         <string>notion.id</string>
