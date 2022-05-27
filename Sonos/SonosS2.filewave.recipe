@@ -21,16 +21,16 @@
     <array>
   		<dict>
   		<key>Arguments</key>
-			<dict>
-			<key>fw_app_bundle_id</key>
+		<dict>
+		<key>fw_app_bundle_id</key>
     		<string>%fw_app_bundle_id%</string>
           	<key>fw_app_version</key>
           	<string>%version%</string>
           	<key>fw_fileset_name</key>
           	<string>%NAME% - %version%</string>
           	<key>fw_import_source</key>
-          	<string>%pathname%</string>
-  			</dict>
+          	<string>%pkg_path%</string>
+  		</dict>
   		<key>Processor</key>
   		<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
   		</dict>
