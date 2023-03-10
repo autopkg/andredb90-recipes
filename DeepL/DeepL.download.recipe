@@ -9,7 +9,7 @@
 	<key>Input</key>
 	<dict>
 		<key>DOWNLOAD_URL</key>
-		<string>https://www.deepl.com/macos/download/DeepL.dmg</string>
+		<string>https://www.deepl.com/macos/download/bigsur/DeepL.dmg</string>
 		<key>NAME</key>
 		<string>DeepL</string>
 	</dict>
