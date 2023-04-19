@@ -32,7 +32,7 @@
 				<key>filename</key>
 				<string>%NAME%.dmg</string>
 				<key>url</key>
-				<string>https://languagetool.org/download/mac-app/LanguageToolDesktop-1.3.dmg</string>
+				<string>https://languagetool.org/download/mac-app/LanguageToolDesktop-latest.dmg</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
