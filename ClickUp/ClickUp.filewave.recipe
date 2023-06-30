@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads the current release version of the ClickUp Installer Package and imports it into FileWave.	
+    	url for x86: https://desktop.clickup.com/mac
+		url for arm64: https://desktop.clickup.com/mac/dmg/arm64
+	</string>
+	<key>Identifier</key>
+    <string>com.github.andredb90.filewave.ClickUp</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>ClickUp</string>
+		<key>url</key>
+		<string>https://desktop.clickup.com/mac/dmg/arm64</string>
+        <key>fw_app_bundle_id</key>
+        <string>com.clickup.desktop-app</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.0.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.andredb90.pkg.ClickUp</string>
+    <key>Process</key>
+    <array>
+  		<dict>
+  			<key>Arguments</key>
+  			<dict>
+       		<key>fw_app_bundle_id</key>
+          <string>%fw_app_bundle_id%</string>
+  				<key>fw_app_version</key>
+  				<string>%version%</string>
+  				<key>fw_fileset_name</key>
+  				<string>%NAME% - %version%</string>
+  				<key>fw_import_source</key>
+  				<string>%pkg_path%</string>
+  			</dict>
+  			<key>Processor</key>
+  			<string>com.github.autopkg.filewave.FWTool/FileWaveImporter</string>
+  		</dict>
+	</array>
+</dict>
+</plist>
