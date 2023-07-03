@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads the current release version of the node.js installer package and imports it into FileWave. (Use RELEASE "latest-dubnium" in your override for latest version)</string>
+    <string>Downloads the current release version of the node.js installer package and imports it into FileWave. (Use RELEASE "latest" in your override for latest version)</string>
     <key>Identifier</key>
     <string>com.github.andreDB90.filewave.node</string>
     <key>Input</key>
