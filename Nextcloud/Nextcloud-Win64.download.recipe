@@ -21,7 +21,7 @@
 				<key>asset_regex</key>
 				<string>.*\.msi$</string>
 				<key>github_repo</key>
-				<string>nextcloud/desktop</string>
+				<string>nextcloud-releases/desktop</string>
 			</dict>
 			<key>Processor</key>
 			<string>GitHubReleasesInfoProvider</string>
