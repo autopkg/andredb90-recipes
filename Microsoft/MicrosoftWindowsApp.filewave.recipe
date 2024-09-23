@@ -11,7 +11,7 @@
         <key>NAME</key>
         <string>Windows App</string>
         <key>fw_app_bundle_id</key>
-	      <string>com.microsoft.rdc.macos</string>
+	<string>com.microsoft.rdc.macos</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.0.0</string>
@@ -22,7 +22,7 @@
   		<dict>
   			<key>Arguments</key>
   			<dict>
-        	<key>fw_app_bundle_id</key>
+        			<key>fw_app_bundle_id</key>
 			  	<string>%fw_app_bundle_id%</string>
   				<key>fw_app_version</key>
   				<string>%version%</string>
