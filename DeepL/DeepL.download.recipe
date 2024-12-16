@@ -8,8 +8,6 @@
 	<string>com.github.andredb90.download.DeepL</string>
 	<key>Input</key>
 	<dict>
-		<key>DOWNLOAD_URL</key>
-		<string>https://www.deepl.com/macos/download/bigsur/DeepL.dmg</string>
 		<key>NAME</key>
 		<string>DeepL</string>
 	</dict>
@@ -20,11 +18,13 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>filename</key>
-				<string>%NAME%.dmg</string>
-				<key>url</key>
-				<string>%DOWNLOAD_URL%</string>
+				<key>appcast_url</key>
+				<string>https://appdownload.deepl.com/macos/appcast.xml</string>
 			</dict>
+			<key>Processor</key>
+			<string>SparkleUpdateInfoProvider</string>
+		</dict>
+		<dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
 		</dict>
