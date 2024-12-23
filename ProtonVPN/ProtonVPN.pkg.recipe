@@ -16,7 +16,7 @@
 	<key>MinimumVersion</key>
 	<string>1.0.0</string>
 	<key>ParentRecipe</key>
-	<string>com.github.andredb90.download.ProtonVPN</string>
+	<string>com.github.dataJAR-recipes.download.ProtonVPN</string>
 	<key>Process</key>
 	<array>
 		<dict>
