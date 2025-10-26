@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.0.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.andredb90.download.swiftDialog</string>
+    <string>com.github.zentralpro.download.swiftDialog</string>
     <key>Process</key>
     <array>
   		<dict>
