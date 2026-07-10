@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the latest version of Apidog, creates a fileset, and copies it into your FileWave Server.</string>
+	<string>Downloads the latest version of Apidog, creates a fileset, and copies it into your FileWave Server. To download for Intel, leave ARCH empty.</string>
 	<key>Identifier</key>
 	<string>com.github.andredb90.filewave.Apidog</string>
 	<key>Input</key>
